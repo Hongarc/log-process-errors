@@ -49,6 +49,7 @@ const COMMON_OPTIONS = {
 
 const RUNNERS = {
   ava: COMMON_OPTIONS,
+  jest: COMMON_OPTIONS,
   // Mocha does not report `unhandleRejection`
   mocha: { ...COMMON_OPTIONS, level: { uncaughtException: 'silent' } },
   jasmine: COMMON_OPTIONS,

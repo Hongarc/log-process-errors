@@ -20,6 +20,8 @@ const usesSpawnWrap = function() {
 const RUNNERS = [
   { name: 'ava', command: file => `ava ${file}` },
 
+  { name: 'jest', command: file => `jest ${file.replace('.js', '.test.js')}` },
+
   { name: 'mocha', command: file => `mocha ${file}` },
 
   {
